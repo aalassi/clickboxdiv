@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        
+
+        .redbox {
+            display: none;
+            width: 200px;
+            background-color: red;
+            height: 500px;
+        }
+
+        input {
+            display: none;
+        }
+
+
+        .red:checked + .redbox,  .blue:checked + .bluebox , .green:checked + .greenbox {
+            display: block;
+        }
+
+         .bluebox {
+            background-color: blue;
+            height: 500px;
+            display: none;
+            width: 200px;
+
+        } 
+
+        .greenbox {
+            background-color: green;
+            height: 500px;
+            display: none;
+            width: 200px;
+        }
+
+        a:hover   {
+            background-color: black;
+            border: 2px solid rgb(255, 230, 5);
+            color: white;
+            padding: 0.5rem;
+            
+            
+           
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+            line-height: 2rem;
+            
+        }
+        
+
+       
+
+        
+
+
+    </style>
+</head>
+<body>
+
+  
+  <ul>
+    <li><a href="">  <label for="red">Red</label></a></li>
+    <li><a href=""><label for="blue">blue</label></a></li>
+    <li><a href=""><label for="green">green</label></a></li>
+  </ul>
+  
+    
+
+   
+
+
+
+    
+  
+    
+   
+
+
+    <input class="red" name="red" type="checkbox" id="red">
+    <div class="redbox">I'm red</div>
+    <input class="blue" name="blue" type="checkbox" id="blue"> 
+    <div class="bluebox"></div>
+    <input class="green" name="green" type="checkbox" id="green"> 
+    <div class="greenbox"></div>
+
+
+   
+
+    
+    
+</body>
+</html>
